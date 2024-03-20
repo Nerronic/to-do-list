@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 *{
@@ -90,3 +91,33 @@ ul li.checked::before{
 }
 
 /* input styling*/
+input{
+  margin:0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding:10px;
+  float: left;
+  font-size: 16px;
+}
+
+
+/*style the "Add task" button*/
+.addBtn{
+ padding: 10px;
+ width: 25%;
+ background-color: rgb(165, 21, 165);
+ color: #e2d8d8;
+ float: left;
+ text-align: center;
+ font-size: 16px;
+ cursor: pointer;
+ transition: 0.3s;
+ border-radius: 10px;
+ 
+ 
+}
+
+.addBtn:hover{
+  background-color: #d232d4;
+}

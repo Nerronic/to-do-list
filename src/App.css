@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+list-style: none;
+}
+/* style the list*/
+ul li{
+  cursor: pointer;
+  padding: 12px 8px 12px  40px;
+  background:blueviolet;
+  font-size: large;
+  transition: 02.s;
+
+
+  /* make list items un-selectable*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* highlight every other task*/
+ul li:nth-child(odd){
+  background-color:grey;
+}
+
+
+ul li:hover{
+  background-color: rgb(114, 16, 117);
+  
+}
+ul li:checked{
+  background-color: rgb(114, 16, 117);
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  content: "";
+  position: absolute;
+  border-color: aqua;
+  border-width: 0  2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  
+}
+
+.close:hover{
+  background-color: #f44336;
+  color: white;
+}
+
+
+/*style the header*/
+.header{
+  background-color:blueviolet;
+  padding: 30px 40px;
+  color: #fff;
+  text-align: center;
+
+}
+/*clear floast after the header*/
+.header:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* input styling*/
